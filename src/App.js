@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import {GiMagnifyingGlass} from 'react-icons/gi';
+import {AiFillCamera} from 'react-icons/ai';
+import {GoGraph} from 'react-icons/go';
+import {CgProfile} from 'react-icons/cg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className='Header'>
+        <span className='Title'>KnowYourWaste</span>
       </header>
+      <div className='Middle'>
+        <button className='Camera'>
+          <AiFillCamera size="35"/>
+        </button>
+      </div>
+      <div className='MenuButtons'>
+        <GiMagnifyingGlass size="24"/>
+        <AiFillCamera size="24"/>
+        <GoGraph size="24"/>
+        <CgProfile size="24"/>
+      </div>
     </div>
   );
 }
