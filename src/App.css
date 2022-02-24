@@ -40,9 +40,21 @@
   margin-top: 45rem;
 }
 
-.Camera {
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  cursor: pointer;
+.Middle > div {
+  background: transparent !important;
+}
+
+.Middle > div > video {
+  object-fit: contain;
+  height: 775px;
+  margin: 48px 0;
+}
+
+.Middle > div > button {
+  bottom: 80px !important;
+  background: url("https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border: 0px !important;
 }
