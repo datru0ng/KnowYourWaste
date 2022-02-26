@@ -9,6 +9,7 @@
 .Header {
   background-color: #5CB23D;
   height: 3rem;
+  width: 44rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +32,7 @@
   background-color: white;
   border-top: 1px solid black;
   height: 3rem;
+  width: 44rem;
 }
 
 .Middle {
@@ -46,7 +48,8 @@
 
 .Middle > div > video {
   object-fit: contain;
-  height: 775px;
+  height: 49rem;
+  width: 44rem;
   margin: 48px 0;
 }
 
