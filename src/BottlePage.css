@@ -1,0 +1,72 @@
+.App {
+    background-color: white;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .Header {
+    background-color: #5CB23D;
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .Title {
+    margin: 0 1rem;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .MenuButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    border-top: 1px solid black;
+    height: 3rem;
+    width: 100vw;
+  }
+  
+  .Middle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    max-height: calc(100vh - 3rem - 3rem);
+    min-height: calc(100vh - 3rem - 3rem);
+  }
+
+  .Card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
+    border: 1px black solid;
+    border-radius: 1rem;
+    margin-top: 3rem;
+  }
+
+  .Image {
+    height: 15rem;
+    width: 100%;
+    background-image: url("https://www.jpl.nasa.gov/edu/images/activities/darkmatter_compare_2.jpg");
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .text{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
