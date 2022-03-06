@@ -7,7 +7,7 @@
   }
   
   .Header {
-    background-color: #5CB23D;
+    background-color: #6cd646;
     height: 3rem;
     width: 100vw;
     display: flex;
@@ -38,25 +38,23 @@
   .Middle {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     max-height: calc(100vh - 3rem - 3rem);
     min-height: calc(100vh - 3rem - 3rem);
   }
 
   .Card {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
     width: 80vw;
     border: 1px black solid;
     border-radius: 1rem;
-    margin-top: 3rem;
   }
 
   .Image {
-    height: 15rem;
+    height: 12rem;
     width: 100%;
     background-image: url("https://www.jpl.nasa.gov/edu/images/activities/darkmatter_compare_2.jpg");
     background-position: top;
@@ -65,8 +63,50 @@
     border-radius: 1rem 1rem 0 0;
   }
 
-  .text{
+  .Text{
     display: flex;
     align-items: flex-start;
     text-align: left;
+    flex-direction: row;
+    margin-left: 1rem;
+  }
+
+  .Description{
+    display: flex;
+    margin: 2rem 1rem .4rem 1rem;
+    justify-content: space-between;
+  }
+
+  .Block1{
+    margin: 0 1rem;
+    border: 1px solid black;
+    border-radius: .4rem;
+    padding: .2rem .4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+  }
+
+  .Block2{
+    margin: 0 1rem;
+    border: 1px solid rgb(52, 133, 184);
+    border-radius: .4rem;
+    padding: .2rem .4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(181, 208, 247);
+  }
+
+  .Location{
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .BackToHome{
+    background: #6cd646;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    border: .5px solid darkgreen;
   }
