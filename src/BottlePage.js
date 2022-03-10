@@ -19,7 +19,7 @@ const BottlePage = () => {
                 <span className='Text'>Number of different wastes: 2</span>
                 <div className='Description'>
                     <span>Waste</span>
-                    <span>To where:</span>
+                    <span>To Where:</span>
                 </div>
                 <div className='Location'>
                     <div className='Block1'>

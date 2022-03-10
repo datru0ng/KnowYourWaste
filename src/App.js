@@ -20,11 +20,13 @@ export default function Router(){
 
 function App() {
   const [showCamera, setShowCamera] = useState(true)
-  var something = ''
+
+  const [imageUrl, setImageUrl] = useState(null)
+
   let takePicture = (img) => {
     console.log(img)
+    setImageUrl(img)
     setShowCamera(false)
-    something = (img)
   }
 
 
@@ -36,7 +38,7 @@ function App() {
 
       <div className='Middle'>
         {showCamera && <Camera takePicture={takePicture} />}
-        <img className='takenPhoto' src={{something}}></img> {/*Need Help displaying base64 img url*/}
+        <img className='takenPhoto' src={imageUrl}></img> {/*Need Help displaying base64 img url*/}
         <div className='NextButton'><Link to="/BottlePage"><button>Next</button></Link></div>
       </div>
 
