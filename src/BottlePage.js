@@ -1,11 +1,13 @@
 import './BottlePage.css';
+import React from 'react';
 import {GiMagnifyingGlass} from 'react-icons/gi';
 import {AiFillCamera} from 'react-icons/ai';
 import {GoGraph} from 'react-icons/go';
 import {CgProfile} from 'react-icons/cg';
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
-const BottlePage = () => {
+function BottlePage() {
+
     return (
       <div className="App">
         <header className='Header'>

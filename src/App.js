@@ -24,7 +24,6 @@ function App() {
   const [imageUrl, setImageUrl] = useState(null)
 
   let takePicture = (img) => {
-    console.log(img)
     setImageUrl(img)
     setShowCamera(false)
   }
@@ -38,10 +37,10 @@ function App() {
 
       <div className='Middle'>
         {showCamera && <Camera takePicture={takePicture} />}
-        <img className='takenPhoto' src={imageUrl}></img> {/*Need Help displaying base64 img url*/}
-        <div className='NextButton'><Link to="/BottlePage"><button>Next</button></Link></div>
+        <img className='takenPhoto' src={imageUrl}></img>
+        <div className='NextButton'><Link to="/BottlePage"><button className='NewButton'>Next</button></Link></div>
       </div>
-
+      
       <div className='MenuButtons'>
         <GiMagnifyingGlass size="24"/>
         <AiFillCamera size="24"/>
