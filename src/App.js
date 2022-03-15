@@ -23,10 +23,10 @@ function App() {
 
   const [imageUrl, setImageUrl] = useState(null)
 
-  let takePicture = (img) => {
+  const takePicture = (img) => {
     setImageUrl(img)
     setShowCamera(false)
-  }
+  };
 
 
   return (
@@ -38,7 +38,7 @@ function App() {
       <div className='Middle'>
         {showCamera && <Camera takePicture={takePicture} />}
         <img className='takenPhoto' src={imageUrl}></img>
-        <div className='NextButton'><Link to="/BottlePage"><button className='NewButton'>Next</button></Link></div>
+        <div className='NextButton'><Link to={"/BottlePage"}><button className='NewButton'>Next</button></Link></div>
       </div>
       
       <div className='MenuButtons'>

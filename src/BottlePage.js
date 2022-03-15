@@ -7,7 +7,6 @@ import {CgProfile} from 'react-icons/cg';
 import {Link, useLocation} from "react-router-dom";
 
 function BottlePage() {
-
     return (
       <div className="App">
         <header className='Header'>
@@ -16,7 +15,7 @@ function BottlePage() {
   
         <div className='Middle'>
             <div className='Card'>
-                <div className='Image'/>
+                <img className='Image'/>
                 <span className='Text'>Item: Water Bottle</span>
                 <span className='Text'>Number of different wastes: 2</span>
                 <div className='Description'>
